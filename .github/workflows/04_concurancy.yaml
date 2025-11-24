@@ -5,7 +5,7 @@ concurrency:
   # this workflow should be triggered for any branch only once
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true # Existing will be cancelled and latest will run
-jobs: 
+jobs:   
   hello:
     runs-on: ubuntu-latest # Linux OS. We can have windows or MAC
     steps: # stages
